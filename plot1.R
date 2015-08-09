@@ -29,14 +29,14 @@ attr(file, "file.format") <- list(sep=";", header=TRUE)
 df <- sqldf("SELECT * FROM file WHERE Date IN('1/2/2007', '2/2/2007')")
 
 # omit NA values; for input file ? = NA
-df <- df[df$Date != "?" & 
-         df$Time != "?" &
-         df$Global_active_power != "?" &
-         df$Global_reactive_power != "?" &
-         df$Voltage != "?" &
-         df$Global_intensity != "?" &
-         df$Sub_metering_1 != "?" &
-         df$Sub_metering_2 != "?" &
+df <- df[df$Date != "?" |
+         df$Time != "?" |
+         df$Global_active_power != "?" |
+         df$Global_reactive_power != "?" |
+         df$Voltage != "?" |
+         df$Global_intensity != "?" |
+         df$Sub_metering_1 != "?" |
+         df$Sub_metering_2 != "?" |
          df$Sub_metering_3 != "?"
          ,]
 
