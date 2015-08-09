@@ -94,21 +94,29 @@ The four plots that you will need to construct are shown below.
 
 ### Plot 1
 
+Run plot1.R to create plot1.png. Before running the script set
+the variable indir to the directory containing the input file,
+and set the variable outdir to the directory to contain the .png
+files. 
+Note:
 
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+* plot1.R loads the libraries and data, and sets most of the variables
+used by all the scripts.
+
+* Records containing a column with the value "?", the equivalent of NA, are omitted.
 
 
 ### Plot 2
 
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+Run plot2.R to create plot2.png.
 
 
 ### Plot 3
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+Run plot3.R to create plot3.png.
 
 
 ### Plot 4
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+Run plot4.R to create plot4.png.
 
